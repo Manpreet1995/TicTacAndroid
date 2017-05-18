@@ -97,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, result.class);
                 intent.putExtra("name1", nam1);
                 intent.putExtra("name2", nam2);
-                intent.putExtra("p1wins", p1Win);
+                intent.putExtra("p1wins", Integer.toString(p1Win));
+                System.out.print(p1Win);
                 intent.putExtra("p2wins", p2Win);
                 startActivity(intent);
             }
